@@ -1,63 +1,73 @@
-# **Projeto React e API's**
-O Projeto React e APIs é um site de pokémons que possui três páginas: Home, Pokedex e Detalhes. O projeto está subdivido em temas de acordo com os conteúdos que estudado durante o Módulo 2 - Frontend.
+!(https://raw.githubusercontent.com/Matheussandi/Pokedex/2f5ce33187dc559f66e9c7bac176a8b2082639ed/src/images/logo.svg)
 
-Este projeto terá como fonte de dados para a sua criação a [Poke Api](https://pokeapi.co/ "Poke Api"), uma Api pública, muito usada para aplicações focadas em aprendizado de programação e também usada em cases de processos seletivos.
+# **Documentação Técnica - Projeto "Pokédex" 🐱‍👤**
 
-Os conteúdos principais  a serem estudados são:
+## **Introdução 🔍**
 
-- Integração de APIs
-- React Router
-- Design Systems
-- Estado Global
+O projeto "Pokédex" é uma aplicação web desenvolvida com o objetivo de fornecer uma lista de Pokémons para o usuário. Através da aplicação, o usuário pode visualizar informações sobre cada Pokémon, adicioná-los ou removê-los de sua Pokédex pessoal, e visualizar detalhes sobre cada Pokémon selecionado. A aplicação foi desenvolvida utilizando as tecnologias React, styled-components, Chakra UI e react-router-dom, e consome dados da API PokeAPI.
 
-## **Enunciado**
-É objetivo deste projeto criar um site com três páginas usando a Poke Api com as seguintes ferramentas:
+Deploy: pokedex-mellissa-morette.surge.sh[https://pokedex-mellissa-morette.surge.sh]
 
-- React
-- React Router
-- Styled-components
-- React Context
-- Axios
+## **Funcionalidades 🎉**
 
-### **Requisitos**
-- **Gerais:**
-	- [ ] O site deve ter 3 páginas: Home, Pokedex e Detalhes;
-	- [ ] Projeto deve seguir o [design](https://www.figma.com/file/KseyA2Ofghiek2Cy3ZaDre/Poked%C3%A9x?t=AEi3zEmWmarf1FbP-0 "design") proposto;
-	- [ ] O fluxo de trocas de páginas devem ser semelhante ao [fluxograma](https://www.figma.com/proto/KseyA2Ofghiek2Cy3ZaDre/Poked%C3%A9x?page-id=0%3A1&node-id=2%3A2&viewport=358%2C197%2C0.27&scaling=scale-down&starting-point-node-id=2%3A2 "fluxograma");
-- **Página Home:**
-	- [ ]  Mostrar uma lista de Pokemons, contendo ao menos 20 Pokemons;
-	- [ ] Cada Pokemon será representado por um Card;
-	- [ ] Em cada card de Pokemon tem um botão para adicioná-lo à Pokedex e um outro botão para acessar os detalhes do Pokemon;
-	- [ ] Header dessa página terá um botão para acessar a página da Pokedex
-- **Página Pokédex**
-	- [ ] Renderizar a lista de pokémons adicionados na pokedex;
-	- [ ] Em cada card de Pokemon deve ter um botão para removê-lo da Pokedex e um outro botão para acessar os detalhes do Pokemon.
-	- [ ] Header deve ter um botão para voltar para a Home
-	- [ ] Não deve ser possível adicionar o mesmo Pokemon duas vezes na Pokedex
-- **Página de Detalhes**
-	- [ ] Mostrar os detalhes do Pokemon selecionado, com informações descritas
-	- [ ] Header deve ter um botão para adicionar ou remover da Pokedex e outro para voltar a página home.
-- [ ] [Criar um readme](https://www.youtube.com/watch?v=1QKwP0SJK-c "Crie um readme") para o projeto;
+A seguir, serão listadas as principais funcionalidades do projeto:
 
+📌 Listagem de Pokémons: A aplicação exibe uma lista de todos os Pokémons disponíveis, contendo seu nome, número, tipo e imagem. O usuário pode navegar pela lista e visualizar informações sobre cada Pokémon.
 
-### Instruções de entrega
+📌 Detalhes do Pokémon: Ao selecionar um Pokémon na lista, o usuário é direcionado para uma página de detalhes do Pokémon, contendo informações mais detalhadas sobre o mesmo, incluindo sua altura, peso, habilidades e estatísticas.
 
-- Faça o fork desse repositório e realize o clone da sua cópia `seu-nome-de-usuario/projeto-intro-web`.
-   <details>
-   <summary>Quer uma dica?</summary>
-   <img src="https://firebasestorage.googleapis.com/v0/b/assets-conteudo.appspot.com/o/gerais%2Ffork.png?alt=media&token=7030e997-246a-41fe-a75f-2a2ced61e54d" alt="Como adicionar o projeto no repositório"/>
-   </details>
-- Crie os arquivos do projeto dentro deste repo;
-- Execute o fluxo de entrega do git. **Lembre-se de abrir os PRs para seu próprio repositório.**
-- Para isso, você precisará fazer o projeto utilizando **branches**. Evite fazer as alterações direto na branch ```main```
-    <details>
-       <summary>Dúvidas sobre o Git & Github?</summary>
-       <p>Adiciomos um vídeo explicando o <strong>processo de entrega</strong> [do fork ao pull request] no Material Assincrono da Aula de <a href="https://estudante.labenu.com.br/conteudos/tecnico/mod1/Git%20e%20Github">Git e Github</a>. Esse vídeo também exemplifica situações que podem acontecer durante o fluxo de utilização do Git.</p>
-    </details>
-- Faça o deploy do projeto. Pode ser ultilizado o [surge](https://labenu.notion.site/Deploy-de-front-React-com-Surge-f902a03ec1d247dc9af9aee5a1469d96), Github pages ou outra ferramenta que faça a disponibilização do seu site para acesso público;
-- Adicionar o link do deploy no readme do seu projeto/repositório:
+📌 Adição à Pokédex: O usuário pode adicionar Pokémons à sua Pokédex pessoal, que é uma lista separada dos Pokémons que ele escolheu. Essa lista pode ser acessada através de uma página específica.
 
+📌 Remoção da Pokédex: O usuário pode remover Pokémons de sua Pokédex pessoal, atualizando a lista de Pokémons em sua Pokédex.
 
+📌 Modal de notificação: Ao adicionar ou remover um Pokémon de sua Pokédex, o usuário recebe uma notificação através de um modal, informando-o sobre a operação realizada.
 
+📌 Navegação: A aplicação possui uma barra de navegação superior, que permite ao usuário navegar entre as diferentes páginas da aplicação.
 
-- Entregue o projeto no [Formulário de entrega](https://docs.google.com/forms/d/e/1FAIpQLSfGGRaglpzWpdREBBfq3eUCMXkRXuiS61Zfyy0L_Ce0uNIXTA/viewform).
+## **Tecnologias 🛠️**
+
+A seguir, serão apresentadas as tecnologias utilizadas no desenvolvimento do projeto:
+
+* React ⚛️: biblioteca JavaScript utilizada para criar a interface de usuário da aplicação.
+* Styled-components 💅: biblioteca utilizada para estilizar os componentes React de forma - dinâmica, através da definição de estilos em arquivos JavaScript.
+* Chakra UI 🔧: biblioteca de componentes React utilizada para construir a interface de usuário, fornecendo estilos pré-definidos e facilitando a construção de interfaces.
+* React-router-dom 🌐: biblioteca utilizada para gerenciar as rotas da aplicação, permitindo a navegação entre as diferentes páginas.
+* PokeAPI 🐾: API externa utilizada para obter dados sobre os Pokémons.
+* Axios 💻: Biblioteca JavaScript utilizada para realizar requisições HTTP na API PokeAPI
+
+## **Componentes 📦**
+
+A seguir, serão apresentados os principais componentes da aplicação, juntamente com suas funcionalidades:
+
+**CardPokemon 🃏**
+Componente responsável por exibir informações sobre um Pokémon, incluindo seu nome, número, tipo e imagem. Possui um botão "Ver detalhes" que leva o usuário à página de detalhes do Pokémon, e um botão "Capturar" ou "Excluir", dependendo do contexto em que é usado. É estilizado usando a biblioteca styled-components.
+
+**Header 🧭**
+Componente responsável por renderizar a barra de navegação na parte superior da aplicação. Utiliza tecnologias como React, styled-components, Chakra UI e react-router-dom.
+
+**App 📱**
+Este arquivo é responsável por gerenciar as rotas da aplicação. Ele utiliza a biblioteca react-router-dom para definir as rotas da aplicação e renderizar os componentes correspondentes a cada rota. O App.js possui três rotas principais: a rota inicial "/", que renderiza a página principal da aplicação, a rota "/details/:id", que renderiza a página de detalhes de um Pokémon específico e a rota "/pokedex", que renderiza a lista de Pokémons adicionados à Pokédex pessoal do usuário.
+
+### **Instalação e Configuração 📝 💻**
+
+1) Após fazer o fork do projeto, clone o repositório do mesmo em seu ambiente local:
+	> git clone https://github.com/seu-usuario/pokedex.git
+2) Instale as dependências do projeto, utilizando o gerenciador de pacotes npm:
+	> npm install
+3) Renomeie o arquivo .env.example para .env, e preencha as variáveis de ambiente necessárias para a conexão com a API PokeAPI. As variáveis necessárias são REACT_APP_API_URL e REACT_APP_API_VERSION, que correspondem à URL da API e à versão utilizada, respectivamente.
+4) Inicie a aplicação em modo de desenvolvimento, utilizando o comando:
+	> npm start
+5) A aplicação estará disponível no endereço http://localhost:3000/.
+
+***Este projeto foi criado por Mellissa Morette. Você pode entrar em contato por meio dos seguintes canais:***
+
+Email: contatomellissamorette@gmail.com [contatomellissamorette@gmail.com] LinkedIn: Mellissa M. dos S. Guimarães [https://www.linkedin.com/in/mellissa-morette/]
+
+Copyright © [2023] Mellissa Morette dos Santos Guimarães
+
+Este trabalho está protegido por leis de direitos autorais e outros direitos de propriedade intelectual. A reprodução, distribuição ou exibição deste trabalho, bem como a criação de trabalhos derivados baseados neste, são proibidas, salvo com autorização prévia por escrito do proprietário dos direitos autorais.
+
+O uso de informações ou dados contidos nesta documentação é de responsabilidade exclusiva do usuário. O proprietário dos direitos autorais não assume responsabilidade por quaisquer danos decorrentes do uso ou confiança nas informações contidas nesta documentação.
+
+Para solicitar permissão para usar este trabalho, entre em contato com o proprietário dos direitos autorais pelo email [contatomellissamorette@gmail.com].
+
